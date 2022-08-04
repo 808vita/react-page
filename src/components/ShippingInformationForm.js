@@ -5,7 +5,7 @@ const ShippingInformationForm = () => {
 		<>
 			<div className="container-fluid">
 				<h6 className="mb-3 text-start">Shipping Information</h6>
-				<form className="needs-validation" novalidate="">
+				<form className="needs-validation" noValidate="">
 					<div className="row g-3">
 						<div className="col-6">
 							<input
@@ -37,7 +37,7 @@ const ShippingInformationForm = () => {
 								className="form-control rounded-edges"
 								id="firstName"
 								placeholder="First name"
-								value=""
+								// value=""
 								required=""
 							></input>
 							<div className="invalid-feedback">
@@ -59,7 +59,7 @@ const ShippingInformationForm = () => {
 								className="form-control rounded-edges"
 								id="lastName"
 								placeholder="Last name"
-								value=""
+								// value=""
 								required=""
 							></input>
 							<div className="invalid-feedback">
@@ -76,16 +76,16 @@ const ShippingInformationForm = () => {
 							></input>
 							<div className="invalid-feedback">Zip code required.</div>
 						</div>
-						<div class="col-md-6">
+						<div className="col-md-6">
 							<input
 								type="tel"
-								class="form-control rounded-edges"
+								className="form-control rounded-edges"
 								id="phone-number"
 								placeholder="Phone Number"
 								required=""
 								pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
 							/>
-							<div class="invalid-feedback">Phone Number is required</div>
+							<div className="invalid-feedback">Phone Number is required</div>
 						</div>
 						<div className="col-md-6">
 							<select
@@ -93,7 +93,8 @@ const ShippingInformationForm = () => {
 								id="country"
 								required=""
 							>
-								<option value="">Choose...</option>
+								{/* <option value="">Choose...</option> */}
+								<option>Choose...</option>
 								<option>Poland</option>
 							</select>
 							<div className="invalid-feedback">

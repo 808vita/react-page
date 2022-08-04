@@ -4,7 +4,7 @@ export const BigButton = ({ text, type }) => {
 	return (
 		<button
 			type="button"
-			class={`btn rounded-button ${
+			className={`btn rounded-button ${
 				type === "green" ? "btn-primary" : "outline-button"
 			}`}
 		>
@@ -17,7 +17,7 @@ export const LongButton = ({ text, type }) => {
 	return (
 		<button
 			type="button"
-			class={`btn rounded-button ${
+			className={`btn rounded-button ${
 				type === "green" ? "btn-primary" : "outline-button-long"
 			}`}
 		>
