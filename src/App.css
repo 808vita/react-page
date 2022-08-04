@@ -1,5 +1,47 @@
 .rounded-edges{
-  border-radius: 50px;
+  border-radius: 60px;
   padding: 15px 20px 15px 20px;
+  border-color:rgba(122,208,167,100);
   
+}
+.rounded-button{
+  border-radius: 60px;
+  padding: 15px 50px 15px 50px;
+  border-color:rgba(122,208,167,100);
+  text-align: center;
+  
+}
+
+
+.btn-primary{
+  color: white;
+  background-color:rgba(122,208,167,255) ;
+  border: rgba(122,208,200,200);
+}
+.btn-primary:hover{
+  background-color:rgba(122,208,200,255) ;
+  color: #16261f;
+}
+
+.outline-button{
+  color:#16261f;
+  background-color: white;
+}
+.outline-button:hover{
+  background-color:rgba(122,208,200,255) ;
+  color: white;
+  border-color:rgba(122,208,200,255) ;
+}
+
+
+
+.outline-button-long{
+  color:#16261f;
+  background-color: white;
+  border-color: #16261f;
+}
+.outline-button-long:hover{
+  background-color:rgba(122,208,200,255) ;
+  color: white;
+  border-color:rgba(122,208,200,255) ;
 }
