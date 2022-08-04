@@ -11,7 +11,7 @@ const PaymentPageLayout = ({ children }) => {
 				<div className="col-lg-5 themed-grid-col">
 					{children.shippingInformation}
 				</div>
-				<div className="col-lg-4 themed-grid-col">.col-lg-4</div>
+				<div className="col-lg-4 themed-grid-col">{children.paymentMethod}</div>
 				<div className="col-lg-3 themed-grid-col">.col-lg-4</div>
 			</div>
 			<div className="row mb-3 text-center">
