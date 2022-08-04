@@ -6,17 +6,17 @@ const PaymentPageLayout = ({ children }) => {
 		<div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-center py-3 border-bottom">
 			<div className="justify-content-center justify-content-md-center my-3">
 				<div className="row mb-3 text-center">
-					<div className="col-sm-6 themed-grid-col">.col-sm-4</div>
+					<div className="col-sm-6 text-start">
+						<h4>Shipping and Payment</h4>
+					</div>
 					<div className="col-sm-6 themed-grid-col">.col-sm-4</div>
 				</div>
 				<div className="row mb-3 text-center">
-					<div className="col-lg-5 themed-grid-col">
+					<div className="col-lg-5 text-center">
 						{children.shippingInformation}
 					</div>
-					<div className="col-lg-4 themed-grid-col">
-						{children.paymentMethod}
-					</div>
-					<div className="col-lg-3 themed-grid-col">{children.yourCart}</div>
+					<div className="col-lg-4 text-center ">{children.paymentMethod}</div>
+					<div className="col-lg-3 ">{children.yourCart}</div>
 				</div>
 				<div className="row mb-3 text-start">
 					<div className="col-sm-6 themed-grid-col">{"<-Back"}</div>

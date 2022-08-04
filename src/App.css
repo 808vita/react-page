@@ -59,3 +59,20 @@
 .total-price{
   font-weight: 500;
 }
+
+
+.outline-img{
+  color:#16261f;
+  background-color: white;
+  border-radius: 60px;
+  padding: 10px 20px 10px 20px;
+  border-color:rgba(122,208,167,100) ;
+  
+
+}
+.outline-img:hover{
+  background-color:rgba(122,208,200,255) ;
+  color: white;
+  border-color:rgba(122,208,200,255) ;
+  
+}
