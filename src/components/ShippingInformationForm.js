@@ -10,7 +10,7 @@ const ShippingInformationForm = () => {
 						<div className="col-6">
 							<input
 								type="email"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="email"
 								placeholder="Email"
 								required=""
@@ -22,7 +22,7 @@ const ShippingInformationForm = () => {
 						<div className="col-6">
 							<input
 								type="text"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="address"
 								placeholder="Address"
 								required=""
@@ -34,7 +34,7 @@ const ShippingInformationForm = () => {
 						<div className="col-sm-6">
 							<input
 								type="text"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="firstName"
 								placeholder="First name"
 								value=""
@@ -47,7 +47,7 @@ const ShippingInformationForm = () => {
 						<div className="col-6">
 							<input
 								type="text"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="city"
 								placeholder="City"
 								required=""
@@ -56,7 +56,7 @@ const ShippingInformationForm = () => {
 						<div className="col-sm-6">
 							<input
 								type="text"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="lastName"
 								placeholder="Last name"
 								value=""
@@ -69,7 +69,7 @@ const ShippingInformationForm = () => {
 						<div className="col-md-6">
 							<input
 								type="text"
-								className="form-control"
+								className="form-control rounded-edges"
 								id="zip"
 								placeholder="Zip"
 								required=""
@@ -79,7 +79,7 @@ const ShippingInformationForm = () => {
 						<div class="col-md-6">
 							<input
 								type="tel"
-								class="form-control"
+								class="form-control rounded-edges"
 								id="phone-number"
 								placeholder="Phone Number"
 								required=""
@@ -88,7 +88,11 @@ const ShippingInformationForm = () => {
 							<div class="invalid-feedback">Phone Number is required</div>
 						</div>
 						<div className="col-md-6">
-							<select className="form-select" id="country" required="">
+							<select
+								className="form-select rounded-edges"
+								id="country"
+								required=""
+							>
 								<option value="">Choose...</option>
 								<option>Poland</option>
 							</select>
