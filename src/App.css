@@ -45,3 +45,17 @@
   color: white;
   border-color:rgba(122,208,200,255) ;
 }
+
+.total-cost{
+  background-color:rgba(241,241,241,255) ;
+  padding: 15px 50px 15px 50px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 60px;
+}
+.total-price{
+  font-weight: 300;
+}
+
+.total-price{
+  font-weight: 500;
+}
