@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import PaymentMethodLayout from "../layout/PaymentMethodLayout";
 import PaymentPageLayout from "../layout/PaymentPageLayout";
 import ShippingInformationLayout from "../layout/ShippingInformationLayout";
+import YourCartLayout from "../layout/YourCartLayout";
 
 const PaymentPage = () => {
 	return (
@@ -12,6 +13,7 @@ const PaymentPage = () => {
 				children={{
 					shippingInformation: <ShippingInformationLayout />,
 					paymentMethod: <PaymentMethodLayout />,
+					yourCart: <YourCartLayout />,
 				}}
 			/>
 		</>
