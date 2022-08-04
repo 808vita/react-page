@@ -3,7 +3,7 @@ import PaymentPage from "./page/PaymentPage";
 
 function App() {
 	return (
-		<div className="container-lg">
+		<div className="container-xxl">
 			<PaymentPage />
 		</div>
 	);
