@@ -47,10 +47,10 @@ const YourCartLayout = () => {
 					<div className="d-inline">
 						<i className="fas fa-truck h5"></i>
 					</div>
-					<p>
+					<span>
 						You are <h6 className="d-inline">$30.02</h6> away from free
 						shipping!
-					</p>
+					</span>
 				</div>
 			</div>
 		</>

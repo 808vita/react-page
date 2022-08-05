@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { LongButton } from "../components/ButtonComponents";
 
 const PaymentPageLayout = ({ children }) => {
+	const navigate = useNavigate();
 	return (
 		<div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-center mx-3 border-bottom">
 			<div className="justify-content-center justify-content-md-center my-3">
@@ -34,7 +36,10 @@ const PaymentPageLayout = ({ children }) => {
 				</div>
 				<div className="row text-start">
 					<div className="col-sm-6 text-center g-1 d-flex flex-wrap align-items-center justify-content-start ">
-						<div className="outline-button-long rounded-back  text-center d-flex flex-wrap align-items-center justify-content-start">
+						<div
+							onClick={() => navigate("/")}
+							className="outline-button-long rounded-back  text-center d-flex flex-wrap align-items-center justify-content-start"
+						>
 							<i className="fas fa-arrow-left h5 me-3 "></i>
 							<h5>Back</h5>
 						</div>
