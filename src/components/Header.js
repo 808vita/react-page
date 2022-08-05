@@ -15,7 +15,7 @@ const Header = () => {
 					<h4>E-Shop</h4>
 				</a>
 
-				<ul className="nav col-12 col-md-auto mb-2 justify-content-around mb-md-0 ">
+				<ul className="nav col-12 col-md-auto d-flex align-items-center mb-2 justify-content-around mb-md-0 ">
 					<li>
 						<a href="/" className="nav-link px-2 link-secondary">
 							Men

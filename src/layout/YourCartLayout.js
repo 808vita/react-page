@@ -42,7 +42,17 @@ const YourCartLayout = () => {
 				<div className="col-sm-5 total-text">Total Cost:</div>
 				<div className="col-sm-5 total-price">${totalCostPrice}</div>
 			</div>
-			<div className="row mb-3 text-center">Free shipping text</div>
+			<div className="row text-center">
+				<div className="d-flex align-items-center justify-content-center px-5">
+					<div className="d-inline">
+						<i className="fas fa-truck h5"></i>
+					</div>
+					<p>
+						You are <h6 className="d-inline">$30.02</h6> away from free
+						shipping!
+					</p>
+				</div>
+			</div>
 		</>
 	);
 };
