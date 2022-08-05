@@ -47,8 +47,8 @@ const Toasts = () => {
 					{userInfo === "Welcome"
 						? "Login to navigate to payment page!"
 						: Auth
-						? `Hellooo!`
-						: "Bye!"}
+						? `${userInfo}`
+						: "You logged out!"}
 				</div>
 			</div>
 		</div>
