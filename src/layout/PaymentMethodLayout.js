@@ -21,7 +21,7 @@ const PaymentMethodLayout = () => {
 				<h6>Payment Method</h6>
 			</div>
 			<div className="row mb-3 text-center">
-				<div className="row mb-3 text-center gap-3 d-flex flex-wrap align-items-center justify-content-evenly">
+				<div className="row mb-3 text-center gap-2 d-flex flex-wrap align-items-center justify-content-evenly">
 					{/* <div className="col-sm-4 outline-img border">
 						<img src={require("../assests/visa.png")} height={20} />
 					</div> */}
@@ -31,7 +31,7 @@ const PaymentMethodLayout = () => {
 								<div key={item} className="col-sm-3 outline-img border g-1">
 									<img
 										src={require("../assests/" + item + ".png")}
-										height={30}
+										height={25}
 									/>
 								</div>
 							);
@@ -40,7 +40,7 @@ const PaymentMethodLayout = () => {
 								<div key={item} className="col-sm-3 outline-img border">
 									<img
 										src={require("../assests/" + item + ".png")}
-										height={18}
+										height={15}
 									/>
 								</div>
 							);
@@ -58,7 +58,7 @@ const PaymentMethodLayout = () => {
 							key={item}
 							className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
 						>
-							<img src={require("../assests/" + item + ".png")} height={25} />
+							<img src={require("../assests/" + item + ".png")} height={18} />
 							<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
 								${deliveryMethodCost[item]}
 							</p>

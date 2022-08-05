@@ -16,16 +16,16 @@ const PaymentPageLayout = ({ children }) => {
 							</div>
 
 							<div className="d-inline">
-								<i className="fas fa-truck"></i>
+								<i className="fas fa-truck truck-icon"></i>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="row mb-3 text-center">
-					<div className="col-lg-5 text-center">
+					<div className="col-lg-6 text-center">
 						{children.shippingInformation}
 					</div>
-					<div className="col-lg-4 text-center d-flex flex-wrap align-items-center justify-content-between">
+					<div className="col-lg-3 text-center d-flex flex-wrap align-items-center justify-content-between">
 						{children.paymentMethod}
 					</div>
 					<div className="col-lg-3 ">{children.yourCart}</div>
@@ -33,7 +33,7 @@ const PaymentPageLayout = ({ children }) => {
 				<div className="row text-start">
 					<div className="col-sm-6 text-center g-1 d-flex flex-wrap align-items-center justify-content-start ">
 						<div className="outline-button-long rounded-back  text-center d-flex flex-wrap align-items-center justify-content-start">
-							<i class="fas fa-arrow-left h5 me-3 "></i>
+							<i className="fas fa-arrow-left h5 me-3 "></i>
 							<h5>Back</h5>
 						</div>
 					</div>
