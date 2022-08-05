@@ -1,4 +1,5 @@
 import React from "react";
+import CartItem from "../components/CartItem";
 
 const cartItems = [
 	{
@@ -14,6 +15,10 @@ const cartItems = [
 		itemId: "#212315",
 	},
 ];
+let totalCostPrice = 0;
+cartItems.map((item) => {
+	return (totalCostPrice = Number(item.itemPrice) + totalCostPrice);
+});
 const YourCartLayout = () => {
 	return (
 		<>
@@ -23,26 +28,19 @@ const YourCartLayout = () => {
 			<div className="row mb-3 text-center">
 				<div className="row mb-3 text-center">
 					{cartItems.map((cartItem) => (
-						<div key={cartItem.itemId} className="col-sm-12 ">
-							<div className="mb-3 text-center d-flex justify-content-evenly">
-								<div>
-									<img src={cartItem.img} className="cart-img" />
-								</div>
-								<div>
-									<h6>{cartItem.itemText}</h6>
-									<p>{cartItem.itemId}</p>
-								</div>
-								<div>
-									<h6>${cartItem.itemPrice}</h6>
-								</div>
-							</div>
-						</div>
+						<CartItem
+							key={cartItem.itemId}
+							img={cartItem.img}
+							itemText={cartItem.itemText}
+							itemPrice={cartItem.itemPrice}
+							itemId={cartItem.itemId}
+						/>
 					))}
 				</div>
 			</div>
-			<div className="row mb-3 text-center total-cost d-flex justify-content-center">
-				<div className="col-sm-5 total-text">Total Cost</div>
-				<div className="col-sm-5 total-price">$price</div>
+			<div className="row mb-3 text-center total-cost d-flex justify-content-between">
+				<div className="col-sm-5 total-text">Total Cost:</div>
+				<div className="col-sm-5 total-price">${totalCostPrice}</div>
 			</div>
 			<div className="row mb-3 text-center">Free shipping text</div>
 		</>

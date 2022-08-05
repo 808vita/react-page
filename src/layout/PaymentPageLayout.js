@@ -9,7 +9,7 @@ const PaymentPageLayout = ({ children }) => {
 					<div className="col-sm-6 text-start">
 						<h4>Shipping and Payment</h4>
 					</div>
-					<div className="col-sm-6 themed-grid-col">.col-sm-4</div>
+					<div className="col-sm-6 ">.col-sm-4</div>
 				</div>
 				<div className="row mb-3 text-center">
 					<div className="col-lg-5 text-center">
@@ -20,14 +20,14 @@ const PaymentPageLayout = ({ children }) => {
 					</div>
 					<div className="col-lg-3 ">{children.yourCart}</div>
 				</div>
-				<div className="row mb-3 text-start">
-					<div className="col-sm-6 themed-grid-col">{"<-Back"}</div>
-					<div className="col-sm-6 themed-grid-col">
-						<div className="row mb-3 text-center">
+				<div className="row text-start">
+					<div className="col-sm-6 ">{"<-Back"}</div>
+					<div className="col-sm-6 ">
+						<div className="row text-end justify-content-center">
 							<div className="col-6">
 								<LongButton text={"CONTINUE SHOPPING"} type={"outline"} />
 							</div>
-							<div className="col-6">
+							<div className="col-6 ">
 								<LongButton text={"PROCEED TO PAYMENT"} type={"green"} />
 							</div>
 						</div>
