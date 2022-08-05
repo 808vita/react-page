@@ -32,7 +32,9 @@ const Toasts = () => {
 						alt="memecat"
 					/>
 
-					<strong className="me-auto">{Auth ? `Hellooo!` : "Bye!"}</strong>
+					<strong className="me-auto">
+						{userInfo === "Welcome" ? "Welcome!" : Auth ? `Hellooo!` : "Bye!"}
+					</strong>
 					<small>Just Now</small>
 					<button
 						type="button"
@@ -42,7 +44,11 @@ const Toasts = () => {
 					></button>
 				</div>
 				<div className="toast-body">
-					{Auth ? `Welcome ${userInfo}` : "You Logged Out!"}
+					{userInfo === "Welcome"
+						? "Login to navigate to payment page!"
+						: Auth
+						? `Hellooo!`
+						: "Bye!"}
 				</div>
 			</div>
 		</div>
