@@ -12,6 +12,7 @@ const Header = () => {
 						src="https://avatars.githubusercontent.com/u/97225946?v=4"
 						height={50}
 						className="logo-img-cat"
+						alt="memecat"
 					/>
 					<h4>
 						<span className="logo-e">E</span>-Shop
@@ -20,13 +21,13 @@ const Header = () => {
 
 				<ul className="nav col-12 col-md-auto d-flex align-items-center mb-2 justify-content-around mb-md-0 gap-5 ">
 					<li>
-						<a className="nav-link px-2 link-secondary">Men</a>
+						<p className="nav-link px-2 link-secondary">Men</p>
 					</li>
 					<li>
-						<a className="nav-link px-2 link-dark">Women</a>
+						<p className="nav-link px-2 link-dark">Women</p>
 					</li>
 					<li>
-						<a className="nav-link px-2 link-dark">Kids</a>
+						<p className="nav-link px-2 link-dark">Kids</p>
 					</li>
 				</ul>
 

@@ -32,6 +32,7 @@ const PaymentMethodLayout = () => {
 									<img
 										src={require("../assests/" + item + ".png")}
 										height={25}
+										alt={item}
 									/>
 								</div>
 							);
@@ -41,6 +42,7 @@ const PaymentMethodLayout = () => {
 									<img
 										src={require("../assests/" + item + ".png")}
 										height={15}
+										alt={item}
 									/>
 								</div>
 							);
@@ -59,7 +61,11 @@ const PaymentMethodLayout = () => {
 								key={item}
 								className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
 							>
-								<img src={require("../assests/" + item + ".png")} height={28} />
+								<img
+									src={require("../assests/" + item + ".png")}
+									height={28}
+									alt={item}
+								/>
 								<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
 									${deliveryMethodCost[item]}
 								</p>
@@ -71,7 +77,11 @@ const PaymentMethodLayout = () => {
 								key={item}
 								className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
 							>
-								<img src={require("../assests/" + item + ".png")} height={18} />
+								<img
+									src={require("../assests/" + item + ".png")}
+									height={18}
+									alt={item}
+								/>
 								<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
 									${deliveryMethodCost[item]}
 								</p>

@@ -5,7 +5,7 @@ const CartItem = ({ img, itemText, itemId, itemPrice }) => {
 		<div className="col-sm-12 ">
 			<div className="mb-3 text-center gap-2 d-flex justify-content-evenly">
 				<div>
-					<img src={img} className="cart-img" />
+					<img src={img} className="cart-img" alt={img} />
 				</div>
 				<div>
 					<h6 className="mb-2 text-start pe-3">{itemText}</h6>

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 const Toasts = () => {
 	const GContext = useContext(GlobalContext);
-	const { Auth, setAuth, userInfo, setUserInfo } = GContext;
+	const { Auth, userInfo } = GContext;
 	const [toast, setToast] = useState("show");
 	const toggler = () => {
 		setToast("hide");
@@ -29,6 +29,7 @@ const Toasts = () => {
 						src="https://avatars.githubusercontent.com/u/97225946?v=4"
 						height={50}
 						className="logo-img-cat me-2"
+						alt="memecat"
 					/>
 
 					<strong className="me-auto">{Auth ? `Hellooo!` : "Bye!"}</strong>
