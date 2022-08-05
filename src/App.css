@@ -127,3 +127,10 @@ width: 50%;
   align-items: center;
   background-color:rgba(122,208,167,255); 
 }
+
+.logo-e{
+  color: orange;
+}
+.logo-img-cat{
+  border-radius: 100%;
+}

@@ -10,12 +10,12 @@ const PaymentPageLayout = ({ children }) => {
 						<h4>Shipping and Payment</h4>
 					</div>
 					<div className="col-sm-6 d-flex flex-row-reverse">
-						<div className="cart-progress text-center d-flex flex-wrap align-items-center justify-content-evenly">
+						<div className="cart-progress text-center d-flex flex-wrap align-items-center justify-content-center">
 							<div className="d-flex flex-wrap align-items-center justify-content-center border icon-round">
 								<i className="fas fa-cart-arrow-down"></i>
 							</div>
 							<div>
-								<hr align="center" width="100px" />
+								<hr align="center" width="80px" />
 							</div>
 							<div className="d-flex flex-wrap align-items-center justify-content-center border icon-round-truck ">
 								<i className="fas fa-truck truck-icon-top"></i>

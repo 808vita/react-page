@@ -53,17 +53,31 @@ const PaymentMethodLayout = () => {
 			</div>
 			<div className="row mb-3 text-center gap-3 d-flex flex-wrap align-items-center justify-content-evenly">
 				{deliveryMethodLogos.map((item) => {
-					return (
-						<div
-							key={item}
-							className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
-						>
-							<img src={require("../assests/" + item + ".png")} height={18} />
-							<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
-								${deliveryMethodCost[item]}
-							</p>
-						</div>
-					);
+					if (["inpost", "fedx"].includes(item)) {
+						return (
+							<div
+								key={item}
+								className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
+							>
+								<img src={require("../assests/" + item + ".png")} height={28} />
+								<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
+									${deliveryMethodCost[item]}
+								</p>
+							</div>
+						);
+					} else {
+						return (
+							<div
+								key={item}
+								className="col-sm-5 outline-img border text-center g-1 d-flex flex-wrap align-items-center justify-content-evenly"
+							>
+								<img src={require("../assests/" + item + ".png")} height={18} />
+								<p className="m-0 pt-1 pb-1 d-flex flex-wrap align-items-center justify-content-evenly">
+									${deliveryMethodCost[item]}
+								</p>
+							</div>
+						);
+					}
 				})}
 			</div>
 		</>
