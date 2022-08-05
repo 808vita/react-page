@@ -9,7 +9,17 @@ const PaymentPageLayout = ({ children }) => {
 					<div className="col-sm-6 text-start">
 						<h4>Shipping and Payment</h4>
 					</div>
-					<div className="col-sm-6 ">.col-sm-4</div>
+					<div className="col-sm-6 d-flex flex-row-reverse">
+						<div className="cart-progress d-flex flex-wrap align-items-center justify-content-evenly">
+							<div className="d-inline">
+								<i className="fas fa-cart-arrow-down"></i>
+							</div>
+
+							<div className="d-inline">
+								<i className="fas fa-truck"></i>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div className="row mb-3 text-center">
 					<div className="col-lg-5 text-center">
@@ -21,7 +31,12 @@ const PaymentPageLayout = ({ children }) => {
 					<div className="col-lg-3 ">{children.yourCart}</div>
 				</div>
 				<div className="row text-start">
-					<div className="col-sm-6 ">{"<-Back"}</div>
+					<div className="col-sm-6 text-center g-1 d-flex flex-wrap align-items-center justify-content-start ">
+						<div className="outline-button-long rounded-back  text-center d-flex flex-wrap align-items-center justify-content-start">
+							<i class="fas fa-arrow-left h5 me-3 "></i>
+							<h5>Back</h5>
+						</div>
+					</div>
 					<div className="col-sm-6 ">
 						<div className="row text-end justify-content-center">
 							<div className="col-6">

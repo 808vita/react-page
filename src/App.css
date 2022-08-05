@@ -46,6 +46,14 @@
   border-color:rgba(122,208,200,255) ;
 }
 
+.rounded-back{
+  border-radius: 60px;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 .total-cost{
   background-color:rgba(241,241,241,255) ;
   padding: 15px 18px 15px 18px;
@@ -90,4 +98,9 @@
 .itemId{
   font-size:small;
   font-weight: 300;
+}
+
+.cart-progress{
+color: red;
+width: 50%;
 }

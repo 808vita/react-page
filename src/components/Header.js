@@ -34,14 +34,14 @@ const Header = () => {
 				</ul>
 
 				<div className="col-md-3 text-end">
-					<button type="button" className="btn btn-outline-primary me-2">
-						11
+					<button type="button" className="btn">
+						<i className="fas fa-search h4"></i>
 					</button>
-					<button type="button" className="btn btn-primary me-2">
-						22
+					<button type="button" className="btn">
+						<i className="fas fa-shopping-cart h4"></i>
 					</button>
-					<button type="button" className="btn btn-primary">
-						33
+					<button type="button" className="btn">
+						<i className="far fa-user h4"></i>
 					</button>
 				</div>
 			</header>
