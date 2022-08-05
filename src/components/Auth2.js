@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 import { useNavigate } from "react-router-dom";
 const Auth2 = () => {
 	const GContext = useContext(GlobalContext);
-	const { loading, setLoading } = GContext;
+	const { setAuth, setUserInfo } = GContext;
 	const navigate = useNavigate();
 	const divRef = useRef(null);
 	function handleCallbackResponse(response) {
@@ -13,9 +13,11 @@ const Auth2 = () => {
 
 		let userObject = jwt_decode(response.credential);
 		console.log(userObject);
-		if (userObject?.email) {
+		if (userObject?.email_verified) {
 			const email = userObject?.email;
-			console.log(email, setLoading, navigate);
+			setUserInfo(email);
+			setAuth(true);
+			navigate("/payment");
 		}
 	}
 

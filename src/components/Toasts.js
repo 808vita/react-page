@@ -1,0 +1,51 @@
+import React, { useEffect, useState, useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
+const Toasts = () => {
+	const GContext = useContext(GlobalContext);
+	const { Auth, setAuth, userInfo, setUserInfo } = GContext;
+	const [toast, setToast] = useState("show");
+	const toggler = () => {
+		setToast("hide");
+	};
+
+	useEffect(() => {
+		setTimeout(() => {
+			toggler();
+		}, 3000);
+	}, [Auth]);
+
+	return (
+		<div className="position-fixed bottom-0 end-0 p-3">
+			{/* style="z-index: 11" */}
+			<div
+				id="liveToast"
+				className={`toast ${toast}`}
+				role="alert"
+				aria-live="assertive"
+				aria-atomic="true"
+			>
+				<div className="toast-header">
+					<img
+						src="https://avatars.githubusercontent.com/u/97225946?v=4"
+						height={50}
+						className="logo-img-cat me-2"
+					/>
+
+					<strong className="me-auto">{Auth ? `Hellooo!` : "Bye!"}</strong>
+					<small>Just Now</small>
+					<button
+						type="button"
+						className="btn-close"
+						data-bs-dismiss="toast"
+						aria-label="Close"
+					></button>
+				</div>
+				<div className="toast-body">
+					{Auth ? `Welcome ${userInfo}` : "You Logged Out!"}
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Toasts;

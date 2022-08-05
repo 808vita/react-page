@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LongButton } from "../components/ButtonComponents";
+import { GlobalContext } from "../context/GlobalState";
 
 const PaymentPageLayout = ({ children }) => {
+	const GContext = useContext(GlobalContext);
+	const { Auth, setAuth, setUserInfo } = GContext;
 	const navigate = useNavigate();
+	const backButton = () => {
+		setAuth(false);
+		setUserInfo("");
+		navigate("/");
+	};
+	useEffect(() => {
+		if (!Auth) {
+			navigate("/");
+		}
+	}, []);
+
 	return (
 		<div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-center mx-3 border-bottom">
 			<div className="justify-content-center justify-content-md-center my-3">
@@ -37,7 +51,7 @@ const PaymentPageLayout = ({ children }) => {
 				<div className="row text-start">
 					<div className="col-sm-6 text-center g-1 d-flex flex-wrap align-items-center justify-content-start ">
 						<div
-							onClick={() => navigate("/")}
+							onClick={() => backButton()}
 							className="outline-button-long rounded-back  text-center d-flex flex-wrap align-items-center justify-content-start"
 						>
 							<i className="fas fa-arrow-left h5 me-3 "></i>
